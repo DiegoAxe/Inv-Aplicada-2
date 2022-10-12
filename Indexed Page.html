@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>IndexedDB</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/General.css'>
+  <!--  <link rel="icon" href="imgs/Logo.png"> -->
+    <link rel="stylesheet" href="css/Indexeddb.css">
+    <script src="https://use.fontawesome.com/4a4e06edc3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/idb@3.0.2/build/idb.min.js"></script>
+</head>
+<body>
+    
+<div class="navvv"> 
+    
+    <div class="title_nav">
+        <h2>Navegador</h2>
+    </div>
+    
+    <nav>
+        <div class="menu">
+            <a href="Index.html"> Home </a>
+            <a href="Session Page.html"> SessionStorage Info </a>
+            <a href="Local Page.html"> LocalStorage Info </a>
+            <a href="Indexed Page.html"> IndexedDB <br>Info </a>
+        </div>
+    </nav>
+    <div class="cont">
+        <ul>
+            <li> Oscar Guevara #14 </li>
+            <li> Gerardo Herrera #15 </li>
+            <li> Cristian Lopez #18 </li>
+            <li> Ariel Lemus  #24 </li>
+            <li> Edmilson Martinez #25 </li>
+        </ul>
+    </div>
+</div>
+
+<header>
+    <h1>Almacenamiento: Indexed DB</h1>
+</header>
+
+<section>
+    <div class="bloqueInfo">
+        <h2>Conceptos, e información básica de IndexedDB</h2>
+        <p><b>IndexedDB</b> es una forma de almacenar datos de manera persistente, dentro de nuestro navegador, 
+            debido a que permite crear aplicaciones con capacidades de consulta enriquecidas, puede funcionar tanto 
+            si tenemos acceso a internet, como si no lo tenemos, lo que es una gran ventaja.</p>
+        <br>
+        <p> Este es un sistema de base de datos transaccional, el cual está basado en SQL, sin embargo, indexedDB es una 
+            base de datos orientada a objetos en JavaScript, la cual permite almacenar, y recuperar objetos que están indexados, 
+            por medio de una clave.</p>
+        <br>
+        <p>Es ideal para almacenar grandes cantidades de datos las cuales requieren ser capaces de ser búscadas rapidamente, 
+            en sitios tales como, un catalogo de productos, registros, es completamente ideal.</p>
+        <br>
+        <p><b>Algunas de las ventajas de IndexedDB son las siguientes:</b>
+        
+            <ol>  
+              <br>
+                <li>Almacena casi todo tipo de valores por claves.</li>
+                <li>Soporta transacciones para mayor fiabilidad.</li>
+                <li>Soporta consultas de rango por clave, e índices.</li>
+                <li>Puede almacenar mucho mayor volumen de datos que el localStorage.</li>
+            </ol>
+        </p>
+        <br>
+        <br>
+        <hr>
+        <h2>Ejemplo práctico - Registro de pacientes</h2>
+        <p>Este ejemplo consiste en que el usuario puede guardar un registro de pacientes, con su nombre y edad, en una base 
+            de datos local. Es importante destacar que con el hecho de cerrar pestaña no se perderán los datos. </p><br>
+        <h3>Presione el botón Agregar paciente para un nuevo paciente</h3><br>
+
+        <form onsubmit="newPacient()">
+            <div class="field">
+                <label for="name">Nombre del paciente:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="edad">Edad del paciente:</label>
+                <input type="number" class="edad" id="edad" name="edad" required min="1" max="150">
+            </div>
+        <button type="submit" href="#" class="button"><i class="fa fa-user fa-lg"></i> Agregar Paciente</button>
+        <button href="#" class="button2" onclick="delPacient()"><i class="fa fa-trash fa-lg"></i> Eliminar lista</button>
+        </form> 
+        
+<br>
+<p>Listado de pacientes:</p><br>
+
+
+
+<table>
+	<thead>
+      <tr>
+        <th>Nombre de Paciente</th>
+        <th>Edad</th>
+      </tr>
+  </thead>
+  <tbody id="listPacient">
+  </tbody>
+</table>
+
+  </div>
+
+</section>
+
+<footer>
+    <ul>
+        <li class="CopyrightLI"><h2> Copyright 2022 &#169 IIIB DSF - DAW </h2>
+    </ul>
+</footer>
+<script src="js/indexeddb.js"></script>
+</body>
+</html>
