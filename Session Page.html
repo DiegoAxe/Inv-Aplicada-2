@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Titulo </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/General.css'>
+  <!--  <link rel="icon" href="imgs/Logo.png"> -->
+    <script src="https://use.fontawesome.com/4a4e06edc3.js"></script>
+</head>
+<body>
+    
+<div class="navvv"> 
+    
+    <div class="title_nav">
+        <h2>Navegador</h2>
+    </div>
+    
+    <nav>
+        <div class="menu">
+            <a href="Index.html"> Home </a>
+            <a href="Session Page.html"> SessionStorage Info </a>
+            <a href="Local Page.html"> LocalStorage Info </a>
+            <a href="Indexed Page.html"> IndexedDB <br>Info </a>
+        </div>
+    </nav>
+    <div class="cont">
+        <ul>
+            <li> Oscar Guevara #14 </li>
+            <li> Gerardo Herrera #15 </li>
+            <li> Cristian Lopez #18 </li>
+            <li> Ariel Lemus  #24 </li>
+            <li> Edmilson Martinez #25 </li>
+        </ul>
+    </div>
+</div>
+
+<header>
+    <h1> Almacenamiento: SessionStorage </h1>
+</header>
+
+<section>
+
+    <div class="bloqueInfo">
+        <h2>Conceptos, e información básica de SessionStorage</h2>
+        <p><b>SessionStorage:</b> al contrario del local, este solamente se mantiene asociado a la sesión actual, la información perdura 
+            mientras el navegador se encuentre abierto, momento de cerrar el navegador se pierde, el sessionStorage soporta las 
+            recargas de página, o reaperturas de la página.</p>
+        <br>
+        <p>Si se abre una nueva pestaña o ventana iniciara como nueva sesión, lo cual es lo contrario a cómo trabajan las cookies.</p>
+        <br>
+        <p><b>La sintaxis del sessionStorage es la siguiente:</b></p>
+        <br>
+        <p>Almacena la información en sessionStorage: sessionStorage.setItem('ñ', 'value');</p>
+        <br>
+        <p>Obtiene la información almacenada desde sessionStorage: var data = sessionStorage.getItem('ñ');</p>
+        <br><br>
+        <hr>
+
+        <h2>Ejemplo práctico - Contador</h2>
+
+        <div class="conta">
+            <p>Contador:</p>
+            <p id="numeros">0</p>
+        
+            
+        </div>
+        <p><button id="accionador" class="botone" type="button">Contador</button>
+
+    <p>Presione el botón para que el contador incremente. No importa si se recarga la página.*</p>
+
+    <p class="pc">*Al recargar la página, el contador regresa a 0, pero este guarda los datos con los que 
+        se había quedado antes de recargarla, por lo tanto, al presionar de nuevo el botón, este 
+        inicia desde el último dato registrado.</p>
+    </div>
+
+</section>
+
+<footer>
+    <ul>
+        <li class="CopyrightLI"><h2> Copyright 2022 &#169 IIIB DSF - DAW </h2>
+    </ul>
+</footer>
+
+</body>
+<script src="js/sessionstorage.js"></script>
+</html>
