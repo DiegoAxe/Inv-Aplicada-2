@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.button{
+  background: rgb(10, 128, 238);
+  color: black;
+  margin: 20px;
+  padding: 10px 10px;
+  text-align: center;
+  width: 200px;
+  text-decoration: none;
+}
+
+
+.button2{
+  background: rgb(225, 185, 5);
+  color: black;
+  margin: 20px;
+  padding: 10px 10px;
+  text-align: center;
+  width: 200px;
+  text-decoration: none;
+}
+
+table, th, td {
+  border: solid 1px #000;
+  padding: 10px;
+}
+  
+table {
+    border-collapse:collapse;
+    caption-side:bottom;
+}
+
+label{
+  font-size:1.2em;
+}
+  
+input{
+  display:block;
+  padding:0.5em;
+  width: 330px;
+  height: 5px;
+  border:2px solid #1325e7;
+  border-radius:5px;
+  outline:none;
+  font-size:1.2em;
+  margin-bottom:0.5em;
+}
+
+.edad{
+  width: 100px !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  appearance: none; 
+  margin: 0; 
+}
+
+input:focus{
+  background:#F5F5F5;
+}

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@800&display=swap');
+:root{ 
+    --Color-BG-Navegador: #2d6073;  /* Igual que el BG-Header  */
+    --Color-BG-Header: #2d6073;  
+    --Color-BG-Footer: #1f192f;  
+    --Color-BG-Contenido-Principal: #b5e8c3;  
+    --Color-Decorativos-1: #1f192f; 
+    --Color-Letras-1: #1f192f; 
+    --Color-BG-DivInfo: #65b8a6;
+}
+
+body{
+    background-color: #f0f7da;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+   display: none;
+}
+ 
+header{
+    position: relative;
+    background-color: var(--Color-BG-Header);
+    border-bottom: 1px #1f192f solid;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 1;
+    
+}
+header h1{
+    color: white;
+    margin-left: 250px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+}
+
+.navvv {
+    color: white;
+    background-color: var(--Color-BG-Navegador);
+    position: fixed;
+    border-right: 1px #1f192f solid;
+    height: 100%;
+    width: 10%;
+    padding: 50px;
+    padding-top: 30px;
+    z-index: 3;
+    margin: 0;
+    text-align: left;
+    overflow: scroll;
+}
+.menu{
+    margin-top: 50px;
+    height: auto;
+    margin-bottom: 180px;
+}
+.menu a{
+    text-decoration: none;
+    display: block;
+    padding: 11px;
+    border-left: 5px solid transparent;
+    color: white;
+    border-top: 1px solid var(--Color-Decorativos-1);
+}
+.menu a:first-child{
+    border-top: 0px solid var(--Color-Decorativos-1);
+}
+.menu a:hover{
+    border-left: 5px solid var(--Color-Decorativos-1);
+}
+.title_nav{
+    width: 14%;
+    padding: 20px 17px;
+    position: fixed;
+    background-color: var(--Color-BG-Navegador);
+    top: 0;
+    left: 0;
+}
+.title_nav h2{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2.2vw;
+    height: 8%;
+}
+.cont{
+    width: 12%;
+    padding: 20px 30px;
+    position: fixed;
+    background-color: var(--Color-BG-Navegador);
+    /*display: flex;*/
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    
+}
+
+.cont ul{
+    list-style: none;
+}
+
+section{
+    margin: 30px 0px 0px 19%;
+    position: relative;
+    background-color: var(--Color-BG-Contenido-Principal);
+    color: var(--Color-Letras-1);
+    width: 73%;
+    height: fit-content;
+    min-height: 400px;
+    z-index: 1;
+    padding: 50px;
+}
+footer{
+    position: relative;
+    margin-top: 30px;
+    background-color:  var(--Color-BG-Footer);
+    border-top: 1px #1f192f solid;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: 1;
+    
+}
+footer h2{
+    color: white;
+    margin-left: 250px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+footer ul li{
+    display:inline-block;
+    list-style-type: none;
+}
+
+.bloqueInfo{
+    width: 95%;
+    margin: 0 auto;
+    background-color: var(--Color-BG-DivInfo);
+    font-size: large;
+    padding: 30px;
+}
+.bloqueInfo h2{
+    margin: 20px 0px;  
+    text-align: center;  
+}   
+.bloqueInfo h3{
+    text-align: center;  
+} 
+
+.bloqueInfo p{
+    text-align: justify;
+}
+
+.bloqueInfo img{
+    width: auto;
+    display: block;
+    margin: auto;
+    margin: 30px auto 30px auto;
+}
+li.CopyrightLI{
+    width: 90%;
+}
+
+.Leermas{
+    color: var(--Color-BG-Footer);
+    font-weight: bold;
+}
+
+hr{
+    border-color: var(--Color-BG-Footer);
+}
+
+
+.conta{
+    border: 1px solid;
+    border-color: var(--Color-BG-DivInfo);
+    width: 80px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.conta p{
+    text-align: center;
+}
+
+.botone{
+    margin: 10px 0 10px 0;
+    margin-left: 43%;
+    background-color:var(--Color-BG-Navegador);
+    cursor: pointer;
+    padding: 20px 30px 20px 30px;
+    color:white;
+    border-radius: 3px;
+    border-color: var(--Color-BG-Navegador);
+    font-size: 15px;
+    transition: 0.5s;
+
+}
+.botone:hover{
+    translate: 3px;
+}
+
+.pc{
+    font-size: 12px;
+}
+
+
+.botone2{
+    margin: 10px 0 10px 0;
+    margin-left: 43%;
+    background-color:var(--Color-BG-Navegador);
+    cursor: pointer;
+    padding: 20px 30px 20px 30px;
+    color:white;
+    border-radius: 3px;
+    border-color: var(--Color-BG-Navegador);
+    font-size: 15px;
+    transition: 0.5s;
+
+}
+.botone2:hover{
+translate: 3px;
+}
